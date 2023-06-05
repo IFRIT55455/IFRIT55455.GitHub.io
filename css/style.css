@@ -1,0 +1,67 @@
+* {margin: 0; padding: 0;}
+
+body 
+{
+    background-image: url("Assets/XO.jpg");
+   
+    background-size: 100%; /* Современные браузеры */
+} 
+
+.content {
+    display: flex;
+    margin: 250px 50px 50px 50px;
+    font-family: sans-serif;
+
+}
+
+#area {
+    width: 273px;
+    border: 4px solid #008000;
+    margin: 0 auto;
+    font-size: 0;
+    color: red;
+}
+
+.cell {
+    width: 85px;
+    height: 85px;
+    line-height: 85px;
+    text-align: center;
+    display: inline-block;
+    font-size: 85px;
+    font-family: "Comic Sans MS";
+    border: 3px solid #008000;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: background .1s;
+}
+
+.cell:hover {
+    background-color: #00FF00;
+}
+
+.currentPlayer {
+    width: 140px;
+    font-size: 32px;
+    font-family: "Comic Sans MS";
+    display: flex;
+    align-items: center;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-family: "Comic Sans MS";
+    
+}
+
+.stat table {
+    border-collapse: collapse;
+}
+
+.stat table, .stat th, .stat td {
+    border: 4px solid #4169E1;
+    padding: 8px;
+    text-align: center;
+}
